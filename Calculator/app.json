@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#e0d9c7",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "计算器",
+    "backgroundColor": "#e0d9c7",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "debug":false
+}

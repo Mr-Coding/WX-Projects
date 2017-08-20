@@ -1,0 +1,46 @@
+<view class="container">
+
+  <view class="show-panel">
+    <text class="expression">{{expression}}{{operator}}</text>
+    <text class="inoutNumbre">{{number}}</text>
+  </view>
+
+  <view class="button-panel">
+    <view class="row-1">
+      <button bindtap="delAll" class="btn square red" hover-class="red-active">AC</button>
+      <button bindtap="delOneByOne" class="btn square orange" hover-class="orange-active">X</button>
+      <button data-operator=" / " bindtap="addNumber" class="btn square gray" hover-class="gray-active">/</button>
+      <button data-operator=" * " bindtap="addNumber" class="btn square gray" hover-class="gray-active">*</button>
+    </view>
+    <view class="row-2">
+      <button data-number="7" bindtap="addNumber" class="btn square white" hover-class="white-active">7</button>
+      <button data-number="8" bindtap="addNumber" class="btn square white" hover-class="white-active">8</button>
+      <button data-number="9" bindtap="addNumber" class="btn square white" hover-class="white-active">9</button>
+      <button data-operator=" + " bindtap="addNumber" class="btn square gray" hover-class="gray-active">+</button>
+    </view>
+    <view class="row-3">
+      <button data-number="4" bindtap="addNumber" class="btn square white" hover-class="white-active">4</button>
+      <button data-number="5" bindtap="addNumber" class="btn square white" hover-class="white-active">5</button>
+      <button data-number="6" bindtap="addNumber" class="btn square white" hover-class="white-active">6</button>
+      <button data-operator=" - " bindtap="addNumber" class="btn square gray" hover-class="gray-active">-</button>
+    </view>
+    <view class="row-4">
+      <view class="row-4-left">
+        <view class="row-4">
+          <button data-number="1" bindtap="addNumber" class="btn square white" hover-class="white-active">1</button>
+          <button data-number="2" bindtap="addNumber" class="btn square white" hover-class="white-active">2</button>
+          <button data-number="3" bindtap="addNumber" class="btn square white" hover-class="white-active">3</button>
+        </view>
+        <view class="row-4">
+          <!-- <button bindtap="delOneByOne" bindlongtap="delAll" class="btn square red" hover-class="red-active">X</button> -->
+          <button data-number="0" bindtap="addNumber" class="btn rectangle-r white" hover-class="white-active">0</button>
+          <button data-number="." bindtap="addNumber"  class="btn square white" hover-class="white-active">.</button>
+        </view>
+      </view>
+      <view class="row-4 right">
+        <button data-number="=" bindtap="addNumber"  class="btn blue rectangle"hover-class="blue-active">=</button>
+      </view>
+    </view>
+  </view>
+
+</view>
